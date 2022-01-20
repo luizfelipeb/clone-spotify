@@ -1,0 +1,290 @@
+:root{
+
+    --default-green: #1DB954;
+    --darker-green: #19a349;
+
+
+}
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/*////////// Utilities //////////*/
+
+.btn-primary{
+
+    background-color: var(--darker-green);
+    color: white;
+    font-size: .9rem;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-style: none;
+    border-radius: 30px;
+    
+
+}
+
+.btn-primary:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/* navbar */
+
+#navbar{
+
+    display: flex;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: .95rem;
+
+    position: fixed;
+    padding: 20px 100px;
+    width: 100%;
+    top: 0;
+
+}
+
+#navbar .navbar-container{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .navbar-container img{
+    height: 40px;
+}
+
+#navbar .navbar-container ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    font-weight: 400;
+    padding: 10px;
+}
+
+#navbar .navbar-container ul li{
+    padding: 0 20px;
+}
+
+#navbar .navbar-container ul li {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar .navbar-container ul li:hover{
+    color: var(--default-green);
+    cursor: pointer;
+}
+
+#navbar .navbar-container ul li:nth-child(3){
+    border-right: 1px white solid;
+
+}
+
+/*//////////////////////////////////////////*/ 
+
+/* Showcase */
+
+.showcase{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+    background: url("/img/showcase.jpg") center center/cover;
+    background-color: rgba(0,0,0, 0.55);
+    background-blend-mode: color;
+    /* background-attachment: fixed; */
+
+}
+
+.showcase .showcase-container{
+    
+    color: var(--default-green);
+    padding: 0 50px;    
+    width: 40%;
+    
+}
+
+.showcase .showcase-container h1, h3, h4{
+    
+    padding-bottom: 15px;
+    
+}
+
+
+.showcase .showcase-container h4{
+    
+    font-size: 1em;
+    font-weight: 700;
+    
+    
+}
+
+.showcase .showcase-container h1{
+    
+    font-size: 2.5em;
+    font-weight: 400;
+    
+}
+
+.showcase .showcase-container h3{
+    
+    font-size: 1.2em;
+    font-weight: 400;
+    
+}
+
+/*////////////////////////*/
+
+/* Footer */
+
+#footer{
+
+    color: white;
+    background: black;
+    padding: 80px 0;
+    
+
+}
+
+#footer .footer-container{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+#footer .footer-container img{
+
+    height: 40px;
+
+}
+
+#footer .footer-menu .footer-menu-item{
+    margin: 20px 0;
+    
+}
+
+
+
+.footer-menu p{
+    font-size: .9rem;
+    font-weight: 500;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.footer-menu li {
+    list-style: none;
+    padding: 5px 0;    
+}
+
+.footer-menu li{
+    
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+
+}
+
+.footer-menu-item:hover{
+    
+    color: var(--default-green);
+    cursor: pointer;
+
+}
+
+
+.socials{
+    display: flex;
+}
+
+.socials i{
+    
+    margin: 10px;
+    background: #222;
+    font-size: 1.6rem;
+
+
+    padding: 15px;
+    border-radius: 30px;
+    box-sizing: cover;
+    
+
+
+}
+
+.socials i:hover{
+    
+    color: var(--default-green);
+    cursor: pointer;
+
+}
+
+
+#footer-info {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 80px;
+
+}
+
+#footer-info .footer-info-items{
+    
+    display: flex;    
+    list-style: none;
+
+}
+
+#footer-info .footer-info-items .footer-info-item{
+    
+    font-size: .9rem;
+    margin: 0 20px;
+    color: #777;
+    
+}
+
+#footer-info .footer-info-items .footer-info-item:hover{
+    color: var(--default-green);
+    cursor: pointer;
+}
+
+#footer-info .rights{
+    font-size: .9rem;
+    color: #888;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#footer-info .rights .country{
+    display: flex;
+}
+
+#footer-info .rights .country i{
+    margin-right: 5px;
+}
+
